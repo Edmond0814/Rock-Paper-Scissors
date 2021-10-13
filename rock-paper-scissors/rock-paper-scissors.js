@@ -4,23 +4,11 @@ let playerWin=0, computerWin=0;
 
 select.forEach(function(element){
     element.addEventListener('click',function(test){
-<<<<<<< HEAD
-
-        let playerChoice = test.target.parentElement.value;
-        console.log(
-            playRound(playerChoice)
-        );
-        if(playerWin>=5||computerWin>=5){
-            (playerWin==5)? alert("The winner is Player!"):alert("The winner is Computer!")
-        }
-    });
-=======
         console.log(playRound(test.target.parentElement.value));
         if (playerWin>=5||computerWin>=5){
             (playerWin>=5)? alert("The winner is Player!"):alert("The winner is computer!")
         }
     })
->>>>>>> rps-ui
 })
 
 
