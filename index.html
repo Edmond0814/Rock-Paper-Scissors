@@ -8,26 +8,23 @@
 </head>
 <body>
     <script>
-        let name=prompt("Who's there?");
-        let password;
-        if (name=="Admin"){
-            password=prompt("Password?")
-            if(password=="TheMaster")
-                alert("Welcome!")
-            else if(password=""){
-                alert("canceled")
-            }
-            else{
-                alert("Wrong Password!")
-            }
-        }
-        else if(name==""){
-            alert("canceled")
-        }
-        else{
-            alert("I don't know you")
+        let add7 = () => {
+            let numb = prompt("Enter a number");
+            alert(+numb + 7);
+        } 
+
+        let multiply = () =>{
+            let numb1 = prompt("Enter the first number");
+            let numb2 = prompt("Enter the second number");
+            return numb1*numb2;
         }
 
+        let capitalize = () =>{
+            let sentence = prompt("Enter a sentence");
+            alert(sentence.replace(sentence.charAt(0),sentence.charAt(0).toUpperCase()))
+        }
+
+        console.log(capitalize());
     </script>
     testing xia
 </body>
