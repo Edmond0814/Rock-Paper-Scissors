@@ -1,6 +1,5 @@
 let playerWin=0, computerWin =0;
 const select = document.querySelectorAll('button');
-let playerWin=0, computerWin=0;
 
 select.forEach(function(element){
     element.addEventListener('click',function(test){
